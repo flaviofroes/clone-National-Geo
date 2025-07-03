@@ -46,6 +46,26 @@
     line-height: 20px;
     margin-bottom: 15px;
 }
+[data-tab="description"] section {
+    display: none;
+}
+
+[ data-tab="description"] section.ativo {
+    display: block;
+}
+[data-anima="anima-right"] {
+    animation: anima-right 0.7s forwards;
+}
+@keyframes anima-right {
+    from {
+        opacity: 0;
+        transform: translate3d(30px,-30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(30px, 30px, 0);
+    }
+}
 @media(max-width: 650px) {
     .animais-list{
         grid-column: 1;
