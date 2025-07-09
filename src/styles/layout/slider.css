@@ -11,6 +11,7 @@
     border: none;
     cursor: pointer;
     color: var(--cor3);
+    user-select: none;
 }
 
 .slider {
