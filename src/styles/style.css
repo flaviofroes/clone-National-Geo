@@ -1,5 +1,7 @@
 @import url('layout/global.css');
 @import url('layout/header.css');
+@import url('layout/dropDownMenu.css');
+@import url('layout/menuMobile.css');
 @import url('layout/sectionAnimais.css');
 @import url('layout/sectionCurio.css');
 @import url('layout/contatos.css');
