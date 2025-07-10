@@ -16,7 +16,7 @@ function ativarTab(indice){
     
     tabDescription[indice].classList.add("ativo");
 }
-  tabDescription[0].classList.add("ativo");
+    
 }
 
    
