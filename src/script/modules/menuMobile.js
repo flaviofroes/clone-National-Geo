@@ -7,5 +7,6 @@ export default function initMenuMobile() {
     function abrirMenuMobile(){
         ulList.classList.toggle('ativo');
         buttonMobile.classList.toggle('ativo');
+        
     }
 }

@@ -28,7 +28,7 @@
     /* Fim Animação */
 
     .button-mobile {
-        display: flex;
+        /* display: flex;
         align-items: center;
         border-color: var(--cor5);
         padding: 10px;
@@ -42,33 +42,61 @@
         cursor: pointer;
         margin: 15px;
         z-index: 2;
-        position: relative;
+        position: relative; */
+     background-color: transparent;
+     border: 1px solid black;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     height: 20px;
+     width: 20px;
+     padding: 1px;
+     
     }
     
-    .button-mobile::before {
+    /* .button-mobile::before {
         content: "";
         background-color: var(--cor4);
         display: inline-block;
         width: 12px;
         height: 2px;
         box-shadow: 0px 4px var(--cor4), 0px -4px var(--cor4);
-    }
+    } */
+ .line-1, .line-2, .line-3 {
+     background-color: black;
+     height: 3px;
+     width: 100%;
+     transition: all 0.3s ease-in-out;
 
-    #menu {
-        display: none;
-        width: 170px;
-        background-color: rgba(0, 0, 0, 0.7);
-        box-shadow: 2px 2px 2px 0 var(--cor4);
-        z-index: 1;
-        position: absolute;
-    }
+ }
+.button-mobile.ativo .line-1 {
+    transform: rotate(45deg) translate(5px, 4px);
+}
 
-    #menu a {
-        color: var(--cor5);
-    }
+.button-mobile.ativo .line-2 {
+    opacity: 0;
+    transform: scaleX(0);
+}
 
-    .drop-down-menu {
-        border: none;
-        position: sticky;
-    }
+.button-mobile.ativo .line-3 {
+    transform: rotate(-45deg) translate(4px, -6px);
+}
+
+#menu {
+    display: none;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 2px 0 var(--cor4);
+    z-index: 1;
+    position: absolute;
+}
+
+#menu a {
+    color: var(--cor5);
+}
+
+.drop-down-menu {
+    border: none;
+position: sticky;
 }
