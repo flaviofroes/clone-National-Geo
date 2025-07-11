@@ -30,7 +30,7 @@
     .button-mobile {
        
      background-color: transparent;
-     border: 1px solid black;
+     border: 1px solid white;
      cursor: pointer;
      display: flex;
      flex-direction: column;
@@ -43,12 +43,13 @@
     
    
  .line-1, .line-2, .line-3 {
-     background-color: black;
+     background-color:white;
      height: 3px;
      width: 100%;
      transition: all 0.3s ease-in-out;
 
  }
+ 
 .button-mobile.ativo .line-1 {
     transform: rotate(45deg) translate(5px, 4px);
 }
