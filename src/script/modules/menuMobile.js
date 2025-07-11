@@ -8,11 +8,17 @@ export default function initMenuMobile() {
         ulList.classList.toggle('ativo');
         buttonMobile.classList.toggle('ativo');
 
-        clickForaMobile.addEventListener("mousedown", (event)=>{
-            if(event.target !== buttonMobile && event.target !== ulList){
+        function handleBodyClick(event) {
+            if (
+                !buttonMobile.contains(event.target) &&
+                !ulList.contains(event.target)
+            ) {
                 ulList.classList.remove('ativo');
                 buttonMobile.classList.remove('ativo');
+                document.body.removeEventListener('click', handleBodyClick);
             }
-        })
+        }
+
+        document.body.addEventListener('click', handleBodyClick);
     }
 }
